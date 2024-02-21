@@ -1,0 +1,72 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.container {
+    border: 2px solid black;
+    padding: 30px 300px;
+    text-align: center;
+    border-radius: 1cap;
+    gap: 40px;
+    background-color: #e2d1e8;
+
+}
+
+input {
+    padding: 10px;
+    cursor: auto;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f2f0bd ;
+}
+
+ul li {
+    list-style: none;
+    padding: 12px 8px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    right: 120px;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 80px;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(images/checked.png);
+}
+
+ul li span {
+    position: absolute;
+    left: 420px;
+    font-size: 22px;
+    border-radius: 50%;
+
+}
+
+ul li span:hover {
+    background: #edeef0;
+}
